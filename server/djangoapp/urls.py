@@ -14,6 +14,8 @@ urlpatterns = [
 
     # path for contact us view
 
+    path(route='contact', view=views.get_contact, name='contact'),
+
     # path for registration
 
     # path for login
