@@ -1,0 +1,15 @@
+{
+  "apikey": "u7PTU5L6eYdZfjcgIS76tkiX7LtxzO6D6_VSzz-Me7Jn",
+  "host": "2e4b1d3c-842a-4f88-80ab-809db4b49829-bluemix.cloudantnosqldb.appdomain.cloud",
+  "iam_apikey_description": "Auto-generated for key crn:v1:bluemix:public:cloudantnosqldb:us-south:a/8102b0aa5d654d64b93d60e250fc62f3:f1ca1bfc-5104-44fc-bbd1-2813e8018f19:resource-key:c1a48f07-ff89-4ae5-85dc-4720b8fab605",
+  "iam_apikey_id": "ApiKey-b2637e04-0a39-4040-8681-a4383df1a277",
+  "iam_apikey_name": "Credenciales de servicio-1",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/8102b0aa5d654d64b93d60e250fc62f3::serviceid:ServiceId-69eb7850-1e8d-4f10-a318-e11187eaa684",
+  "url": "https://2e4b1d3c-842a-4f88-80ab-809db4b49829-bluemix.cloudantnosqldb.appdomain.cloud",
+  "username": "2e4b1d3c-842a-4f88-80ab-809db4b49829-bluemix"
+}
+
+
+export IAM_API_KEY=u7PTU5L6eYdZfjcgIS76tkiX7LtxzO6D6_VSzz-Me7Jn
+export COUCH_URL=https://2e4b1d3c-842a-4f88-80ab-809db4b49829-bluemix.cloudantnosqldb.appdomain.cloud
