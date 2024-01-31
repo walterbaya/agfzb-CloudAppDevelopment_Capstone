@@ -12,8 +12,7 @@ class CarModelInline(admin.StackedInline):
 # CarModelAdmin class
 
 class CarModelAdmin(admin.ModelAdmin):
-    fields = ['dealer_id', 'name', 'description', 'type', 'year']
-
+    fields = ['dealer_id', 'name', 'type', 'year']
 
 # CarMakeAdmin class with CarModelInline
 
