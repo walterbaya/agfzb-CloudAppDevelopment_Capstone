@@ -12,7 +12,7 @@ class CarMake(models.Model):
     
     def __str__(self):
         return "Name: " + self.name + ", " + \
-               "Type: " + self.type + ", " \
+               "Description: " + self.type + ", " \
                "Year: " + str(self.year)
 
 # Create a Car Model model 
