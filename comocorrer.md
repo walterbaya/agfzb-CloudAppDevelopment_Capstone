@@ -5,3 +5,5 @@ npm install express
 node get-dealership.js
 
 CORRER PYTHON
+
+python3 manage.py runserver
