@@ -14,13 +14,11 @@ def get_request(url, **kwargs):
     print("GET from {} ".format(url))
     try:
         if api_key:
-            # Call get method of requests library with URL and parameters
             response = requests.get(url, headers={'Content-Type': 'application/json'}, 
-            params=kwargs, auth=HTTPBasicAuth('apikey', api_key))
+                params=kwargs, auth=HTTPBasicAuth('apikey', api_key))
         else:
             response = requests.get(url, headers={'Content-Type': 'application/json'}, 
             params=kwargs)
-
     except:
         # If any error occurs
         print("Network exception occurred")
@@ -103,6 +101,6 @@ def analyze_review_sentiments(text):
     params["return_analyzed_text"] = kwargs["return_analyzed_text"]
     params["api_key"] = "d51TopYsxea5lx2OJ_WN5aIGycFodteELtidBs4W5GhF"
     response = get_request("https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/665dd282-1da0-4f60-9cb2-1179aba79b22", params)
-
+    return response
 
 
