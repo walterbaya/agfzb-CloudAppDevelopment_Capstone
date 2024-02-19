@@ -104,13 +104,12 @@ def get_dealerships(request):
 # Create a `get_dealer_details` view to render the reviews of a dealer
 def get_dealer_details(request, dealer_id):
     if request.method == "GET":
-        url = "https://walterbaya19-3000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/dealerships/get"
+        url = "https://walterbaya19-3000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/reviews/get"
         # Get dealers from the URL
         details = get_dealer_reviews_from_cf(url, dealer_id)
-        # Concat all detail's short name
-        details_names = ' '.join([detail.short_name for detail in details])
+        
         # Return a list of dealer short name
-        return HttpResponse(details_names)
+        return HttpResponse(details)
 
 
 
@@ -125,7 +124,6 @@ def add_review(request, dealer_id):
     review["name"] = "nuevo"
     review["dealership"] = 11
     review["review"] = "This is a great car dealer"
-
     json_payload["review"] = review
 
     return post_request(url, json_payload, dealerId=dealer_id)
